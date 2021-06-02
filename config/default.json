@@ -1,4 +1,6 @@
 {
     "mongoURI" : "mongodb+srv://kishan:kishan@merndevconnector.rsmdv.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
-    "jwtSecret" : "mysecrettoken"
+    "jwtSecret" : "mysecrettoken",
+    "githubClientId":"d6fe037a1fdaad7ad35f",
+    "githubSecret":"ceb832a0f8b343cb55eefecb07d1112886c384e3"
 }
