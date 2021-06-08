@@ -65,11 +65,11 @@ const Profile = ({ match,
                         </div>
 
                         {/* Github Repos Section */}
-                        {/* {
+                        {
                             profile.githubusername && (
                                 <ProfileGithub username={profile.githubusername} />
                             )
-                        } */}
+                        }
                     </div>
                 </Fragment>
             }
