@@ -7,6 +7,7 @@ import ProfileTop from './ProfileTop'
 import ProfileAbout from './ProfileAbout'
 import ProfileExperience from './ProfileExperience'
 import ProfileEducation from './ProfileEducaiton'
+import ProfileGithub from './ProfileGithub'
 import { getProfileById } from '../../actions/profile'
 
 const Profile = ({ match,
@@ -34,6 +35,8 @@ const Profile = ({ match,
                     <div class="profile-grid my-1">
                         <ProfileTop profile={profile} />
                         <ProfileAbout profile={profile} />
+
+                        {/* Profile Eeperience Section */}
                         <div className="profile-exp bg-white p-2">
                             <h2 className="text-primary">Experience</h2>
                             {profile.experience.length > 0 ? (
@@ -47,6 +50,7 @@ const Profile = ({ match,
                             )}
                         </div>
 
+                        {/* Profile Education Section */}
                         <div className="profile-edu bg-white p-2">
                             <h2 className="text-primary">Education</h2>
                             {profile.education.length > 0 ? (
@@ -59,6 +63,13 @@ const Profile = ({ match,
                                 <h4>No education credentials</h4>
                             )}
                         </div>
+
+                        {/* Github Repos Section */}
+                        {/* {
+                            profile.githubusername && (
+                                <ProfileGithub username={profile.githubusername} />
+                            )
+                        } */}
                     </div>
                 </Fragment>
             }
